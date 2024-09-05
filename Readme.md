@@ -77,11 +77,7 @@ The ground truth collected for potato crop was used to train two ML models namel
 Over multiple iterations with MTVI1 and MSAVIhyper VIs and NIR and Green Bands, the following algorithm is proposed for unsupervised segmentation of multispectral data for potato crop detection:
 
 ### Potato Feature Calculation
-
-Potato Feature =  
-$
-\frac{\left(\frac{1}{N} \sum_{t=0}^{N} (MTVI1_{t+1} - MTVI1_{t}) \times MTVI1_{\text{peak greenness}}\right)}{MTVI1_{\text{harvesting}} \times MSAVI_{\text{peak greenness}}}
-$
+![Proposed Algorithm](images/equation_image.png)
 
 Where:
 - `MTVI1` stands for Modified Triangular Vegetation Index
