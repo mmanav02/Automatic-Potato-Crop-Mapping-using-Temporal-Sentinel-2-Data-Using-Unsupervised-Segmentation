@@ -27,10 +27,10 @@ The ground truth used for supervised and unsupervised processing was supplied by
 - Generating 10 vegetation indices.
 
 #### Data Mosaicking:
-![Data Mosaicking](Mosaicking.png) 
+![Data Mosaicking](images/Mosaicking.png) 
 
 #### Data Masking:
-![Data Masking](Masking.png)
+![Data Masking](images/Masking.png)
 
 ## Feature Engineering:
 A Vegetation Index (VI) is a transformation of two or more spectral imagery bands that highlight vegetation present in the image, thereby supplementing remote sensing. Firstly, the following VIs were selected:
@@ -49,14 +49,14 @@ A Vegetation Index (VI) is a transformation of two or more spectral imagery band
 ### Filter - 1:
 The difference time series plots for various crops will help select which indices best show the difference between potatoes and another crop. Thereby showing its sensitivity to potato crops.
 The plots are shown as follows:
-![Difference Plots](<TimeSeries_Difference_(Late Potato).png>) 
-![Difference Plot - Bands](<TimeSeries_Difference_Bands_(late Potato).png>) 
-![Difference Plot - Filtered out](<TimeSeries_Difference_Filtered_(Early Potato).png>)
+![Difference Plots](<images/TimeSeries_Difference_(Late Potato).png>) 
+![Difference Plot - Bands](<images/TimeSeries_Difference_Bands_(late Potato).png>) 
+![Difference Plot - Filtered out](<images/TimeSeries_Difference_Filtered_(Early Potato).png>)
 
 ### Filter - 2:
 The difference between potato crop pixels and the average of other crop pixels throughout the period of interest will show the sensitivity of a vegetation index with respect to potato crops, especially during harvesting.
 The bar plots are shown as follows:
-![Bar Plot MTVI1](Bar_ConsequtiveDifference_MTVI1.png)
+![Bar Plot MTVI1](images/Bar_ConsequtiveDifference_MTVI1.png)
 
 Therefore, MTVI1 and MSAVIhyper were used for algorithm creation.
 
@@ -91,8 +91,8 @@ Where:
 And thus the potato feature generated was to be thresholded to generate the final segmented image. Segmentation of generated potato feature with the following threshold giving maximum accuracy of 84.48 % and Potato feature < -0.2078.
 
 The segmented output of the proposed algorithm and the potato feature values for various crops is given below:
-![Segmentation output](SegmentedOutput_Unsupervised_VI.png) 
-![Potato feature values for various crops](Boxplot_VI.png)
+![Segmentation output](images/SegmentedOutput_Unsupervised_VI.png) 
+![Potato feature values for various crops](images/Boxplot_VI.png)
 
 The proposed algorithm takes 30 minutes to generate and display segmented output on a single core of multi-core processing system while the supervised algorithm takes 23 hours to generate segmented output while multi-core processing.
 
