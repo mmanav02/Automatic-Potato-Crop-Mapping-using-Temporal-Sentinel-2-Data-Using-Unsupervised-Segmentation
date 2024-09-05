@@ -79,9 +79,9 @@ Over multiple iterations with MTVI1 and MSAVIhyper VIs and NIR and Green Bands, 
 ### Potato Feature Calculation
 
 Potato Feature =  
-\[
+$
 \frac{\left(\frac{1}{N} \sum_{t=0}^{N} (MTVI1_{t+1} - MTVI1_{t}) \times MTVI1_{\text{peak greenness}}\right)}{MTVI1_{\text{harvesting}} \times MSAVI_{\text{peak greenness}}}
-\]
+$
 
 Where:
 - `MTVI1` stands for Modified Triangular Vegetation Index
